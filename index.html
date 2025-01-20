@@ -103,13 +103,66 @@
                         <h3 class="auth__label">Регистрация / вход</h3>
                         <h4 class="auth__sublabel">Чтобы сохранить настройки</h4>
                     </div>
-                    
+
+                    <label class="label">
+                        Name:
+                        <input type="text" class="input">
+                    </label>
+                    <label class="label">
+                        Email: 
+                        <input type="email" class="input">
+                    </label>
+                    <label class="label">
+                        Password:
+                        <input type="password" class="input">
+                    </label>
+                    <input type="button" value="Войти" class="auth__btn">
                 </form>
 
                 <form class="settings__form">
                     <h3 class="settings__label">Настройки</h3>
                     
+                    <label class="label">
+                        Font:
+                        <select name="" id="" class="settings__input">
+                            <option value="StratosSkyeng">StratosSkyeng</option>
+                            <option value="Verdana" selected>Verdana</option>
+                            <option value="OpenSans">OpenSans</option>
+                        </select>
+                    </label>
+                    <label class="label">
+                        Size:
+                        <input type="number" class="settings__input settings__font-size">
+                        px
+                    </label>
+                    <label class="label">
+                        Color:
+                        <input type="color" class="settings__input settings__font-color">
+                    </label>
+                    <label class="label settings__font-interval">
+                        Interval:
+                        <input type="range" class="settings__input" min="0" max="300" step="10" value="150">
+                    </label>
+
+                    <div class="label">
+                        Background color:
+                        <label class="settings__background-color-label white">
+                            <input type="radio" name="font-color" id="">
+                        </label>
+                        <label class="settings__background-color-label bisque">
+                            <input type="radio" name="font-color" id="">
+                        </label>
+                        <label class="settings__background-color-label grey">
+                            <input type="radio" name="font-color" id="">
+                        </label>
+                        <label class="settings__background-color-label black">
+                            <input type="radio" name="font-color" id="">
+                        </label>
+
+                    </div>
                 </form>
+
+
 
             </div>
         </div>
